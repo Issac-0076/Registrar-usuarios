@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro e Inicio de Sesión</title>
+    <link rel="stylesheet" href="hpla.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registro e Inicio de Sesión</h2>
+        <button id="crearUsuarioBtn">Crear Usuario</button>
+        <button id="iniciarSesionBtn">Iniciar Sesión</button>
+    </div>
+
+    <div class="modal" id="crearUsuarioModal">
+        <form id="crearUsuarioForm">
+            <h3>Crear Usuario</h3>
+            <input type="text" id="nombre" placeholder="Nombre" required><br>
+            <input type="number" id="edad" placeholder="Edad" required><br>
+            <input type="email" id="correo" placeholder="Correo electrónico" required><br>
+            <input type="text" id="nombreUsuario" placeholder="Nombre de usuario" required><br>
+            <input type="password" id="contrasena" placeholder="Contraseña" required><br>
+            <button type="submit">Registrar</button>
+        </form>
+    </div>
+
+    <div class="modal" id="iniciarSesionModal">
+        <form id="iniciarSesionForm">
+            <h3>Iniciar Sesión</h3>
+            <input type="text" id="nombreUsuarioLogin" placeholder="Nombre de usuario" required><br>
+            <input type="password" id="contrasenaLogin" placeholder="Contraseña" required><br>
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+    </div>
+
+    <div class="modal" id="usuarioInfoModal">
+        <h3>Bienvenido</h3>
+        <p id="mensajeBienvenida"></p>
+    </div>
+
+    <script src="erick.js"></script>
+</body>
+</html>
